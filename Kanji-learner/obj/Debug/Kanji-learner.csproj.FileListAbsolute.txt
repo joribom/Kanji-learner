@@ -1,0 +1,17 @@
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.exe.config
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.exe
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.pdb
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.csprojResolveAssemblyReference.cache
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\obj\Debug\Kanji_learner.Form1.resources
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\obj\Debug\Kanji_learner.Properties.Resources.resources
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.csproj.GenerateResource.Cache
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.exe
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.pdb
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\FirstGradeKanji.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\SecondGradeKanji.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\SixthGradeKanji.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\Hiragana.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\Katakana.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\FifthGradeKanji.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\FourthGradeKanji.xml
+c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\ThirdGradeKanji.xml

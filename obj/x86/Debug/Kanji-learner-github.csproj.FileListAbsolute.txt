@@ -1,0 +1,5 @@
+C:\Users\Johan\Documents\Visual Studio 2015\Projects\Kanji-learner\bin\Debug\WindowsApplication.exe.config
+C:\Users\Johan\Documents\Visual Studio 2015\Projects\Kanji-learner\obj\x86\Debug\Kanji-learner-github.csprojResolveAssemblyReference.cache
+C:\Users\Johan\Documents\Visual Studio 2015\Projects\Kanji-learner\obj\x86\Debug\Kanji_learner.Form1.resources
+C:\Users\Johan\Documents\Visual Studio 2015\Projects\Kanji-learner\obj\x86\Debug\Kanji_learner_github.Kanji_learner.Properties.Resources.resources
+C:\Users\Johan\Documents\Visual Studio 2015\Projects\Kanji-learner\obj\x86\Debug\Kanji-learner-github.csproj.GenerateResource.Cache
