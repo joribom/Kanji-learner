@@ -118,6 +118,10 @@ namespace Kanji_learner
             translationTextBox.Text = "";
             onyomiTextBox.Text = "";
             kunyomiTextBox.Text = "";
+            if (lesson.isKanjiLesson())
+            {
+                strokeOrderPictureBox.ImageLocation = lesson.getFileName().Substring(0, lesson.getFileName().Length - 4) + "/" + lesson.getKanji() + ".gif";
+            }
         }
 
         private void changeLesson(String filePath)
@@ -143,6 +147,8 @@ namespace Kanji_learner
                 correctTranslationTextBox.Visible = true;
                 translationLabel.Visible = true;
                 translationTextBox.Visible = true;
+                strokeOrderLabel.Visible = true;
+                strokeOrderPictureBox.Visible = true;
                 this.Width = originalWidth;
                 characterTextBox.Width = characterBoxOriginalWidth;
                 enterButton.Location = new Point(enterButtonOriginalX, enterButton.Location.Y);
@@ -162,7 +168,9 @@ namespace Kanji_learner
                 correctTranslationTextBox.Visible = false;
                 translationLabel.Visible = false;
                 translationTextBox.Visible = false;
-                this.Width = originalWidth + characterBoxOriginalWidth / 10 * 7;
+                strokeOrderLabel.Visible = false;
+                strokeOrderPictureBox.Visible = false;
+                this.Width = originalWidth + characterBoxOriginalWidth / 10 * 7 - strokeOrderPictureBox.Width;
                 characterTextBox.Width = characterBoxOriginalWidth + characterBoxOriginalWidth / 10 * 7;
                 enterButton.Location = new Point(enterButtonOriginalX + characterBoxOriginalWidth / 10 * 7, enterButton.Location.Y);
                 correctKunyomiDescriptLabel.Text = "Previous romaji:";
