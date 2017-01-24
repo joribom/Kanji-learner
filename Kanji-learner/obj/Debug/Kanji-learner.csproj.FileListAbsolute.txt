@@ -15,3 +15,20 @@ c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner
 c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\FifthGradeKanji.xml
 c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\FourthGradeKanji.xml
 c:\users\johan\documents\visual studio 2015\Projects\Kanji-learner\Kanji-learner\bin\Debug\ThirdGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.exe.config
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.exe
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.pdb
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\FirstGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\SecondGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\SixthGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Hiragana.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Katakana.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\FifthGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\FourthGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\ThirdGradeKanji.xml
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.exe
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.pdb
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.csprojResolveAssemblyReference.cache
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji_learner.Form1.resources
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji_learner.Properties.Resources.resources
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.csproj.GenerateResource.Cache

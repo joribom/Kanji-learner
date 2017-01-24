@@ -18,6 +18,10 @@ namespace Kanji_learner
         private Dictionary<String, String> meaning = new Dictionary<String, String>();
         private Dictionary<String, String> onyomi = new Dictionary<String, String>();
         private Dictionary<String, String> kunyomi = new Dictionary<String, String>();
+        private String currentStrokes;
+        private String currentMeaning;
+        private String currentOnyomi;
+        private String currentKunyomi;
         private String fileName;
         private int currentKanjiNumber;
         private bool isKanji;
@@ -33,7 +37,6 @@ namespace Kanji_learner
             XmlDocument doc = new XmlDocument();
             doc.Load(fileName);
             XmlNode dataset = doc.SelectSingleNode("data-set");
-            currentKanjiNumber = 0;
 
             String currentKanji;
             String[] currentValues;
@@ -52,7 +55,16 @@ namespace Kanji_learner
             {
                 Console.WriteLine(String.Format("{0}: {1}, {2}, {3}, {4}", singlekanji, strokes[singlekanji], meaning[singlekanji], onyomi[singlekanji], kunyomi[singlekanji]));
             }
-            original_list = (kanji);
+            original_list = kanji;
+            setCurrentStrings();
+        }
+
+        private void setCurrentStrings()
+        {
+            currentStrokes = strokes[kanji[currentKanjiNumber]];
+            currentMeaning = meaning[kanji[currentKanjiNumber]];
+            currentOnyomi = onyomi[kanji[currentKanjiNumber]];
+            currentKunyomi = kunyomi[kanji[currentKanjiNumber]];
         }
 
         public bool isKanjiLesson()
@@ -67,49 +79,64 @@ namespace Kanji_learner
 
         public void selectRandomKanji()
         {
+            if (kanji.Count == 0)
+            {
+                return;
+            }
             int number = random.Next(kanji.Count);
             currentKanjiNumber = number;
+            setCurrentStrings();
         }
 
         public void selectNextKanji()
         {
+            if (kanji.Count == 0)
+            {
+                return;
+            }
             currentKanjiNumber++;
             if (currentKanjiNumber >= kanji.Count)
             {
                 currentKanjiNumber = 0;
             }
-        }
-
-        public void currentKanjiPassed()
-        {
-            kanji.RemoveAt(currentKanjiNumber);
+            setCurrentStrings();
         }
 
         public String getKanji()
         {
+            if (kanji.Count == 0)
+            {
+                return "";
+            }
             return kanji[currentKanjiNumber];
         }
 
         public String getStrokesForCurrentKanji()
         {
-            return strokes[kanji[currentKanjiNumber]];
+            return currentStrokes;
         }
 
         public String getMeaningForCurrentKanji()
         {
-            return meaning[kanji[currentKanjiNumber]];
+            return currentMeaning;
         }
 
         public String getOnyomiForCurrentKanji()
         {
-            return onyomi[kanji[currentKanjiNumber]];
+            return currentOnyomi;
         }
 
         public String getKunyomiForCurrentKanji()
         {
-            return kunyomi[kanji[currentKanjiNumber]];
+            return currentKunyomi;
         }
 
+        public bool currentKanjiPassed()
+        {
+            kanji.RemoveAt(currentKanjiNumber);
+            currentKanjiNumber--;
+            return kanji.Count != 0;
+        }
 
         private bool correctString(String inputString, String passString)
         {

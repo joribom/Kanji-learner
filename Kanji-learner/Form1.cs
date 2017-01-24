@@ -17,12 +17,14 @@ namespace Kanji_learner
         private Lesson lesson = new Lesson("FirstGradeKanji.xml", true);
         private int originalWidth;
         private int characterBoxOriginalWidth;
+        private int enterButtonOriginalX;
 
         public Form1()
         {
             InitializeComponent();
             originalWidth = this.Width;
             characterBoxOriginalWidth = characterTextBox.Width;
+            enterButtonOriginalX = enterButton.Location.X;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -75,6 +77,10 @@ namespace Kanji_learner
             correctLabel.Visible = true;
             correctLabel.Text = "Correct!";
             correctLabel.ForeColor = Color.LawnGreen;
+            if (!lesson.currentKanjiPassed())
+            {
+                MessageBox.Show("You have completed every character for this lesson!", "Notice", MessageBoxButtons.OK);
+            }
             nextKanji(false);
         }
 
@@ -139,7 +145,9 @@ namespace Kanji_learner
                 translationTextBox.Visible = true;
                 this.Width = originalWidth;
                 characterTextBox.Width = characterBoxOriginalWidth;
+                enterButton.Location = new Point(enterButtonOriginalX, enterButton.Location.Y);
                 correctKunyomiDescriptLabel.Text = "Previous kun'yomi:";
+                setTextBoxesAccordingToCheckBoxes();
             }
             else
             {
@@ -156,6 +164,7 @@ namespace Kanji_learner
                 translationTextBox.Visible = false;
                 this.Width = originalWidth + characterBoxOriginalWidth / 10 * 7;
                 characterTextBox.Width = characterBoxOriginalWidth + characterBoxOriginalWidth / 10 * 7;
+                enterButton.Location = new Point(enterButtonOriginalX + characterBoxOriginalWidth / 10 * 7, enterButton.Location.Y);
                 correctKunyomiDescriptLabel.Text = "Previous romaji:";
             }
         }
@@ -207,16 +216,13 @@ namespace Kanji_learner
             kunyomiLabel.Enabled = includeRomajiCheckBox.Checked;
             kunyomiTextBox.Enabled = includeRomajiCheckBox.Checked;
 
-            if (includeRomajiCheckBox.Checked)
-            {
-                onyomiLabel.Visible = onAndKunCheckBox.Checked;
-                onyomiTextBox.Visible = onAndKunCheckBox.Checked;
-                onyomiLabel.Enabled = onAndKunCheckBox.Checked;
-                onyomiTextBox.Enabled = onAndKunCheckBox.Checked;
+            onyomiLabel.Visible = onAndKunCheckBox.Checked && includeRomajiCheckBox.Checked;
+            onyomiTextBox.Visible = onAndKunCheckBox.Checked && includeRomajiCheckBox.Checked;
+            onyomiLabel.Enabled = onAndKunCheckBox.Checked && includeRomajiCheckBox.Checked;
+            onyomiTextBox.Enabled = onAndKunCheckBox.Checked && includeRomajiCheckBox.Checked;
 
-                kunyomiLabel.Text = onAndKunCheckBox.Checked ? "Kun'yomi" : "Romaji";
-            }
-
+            kunyomiLabel.Text = onAndKunCheckBox.Checked ? "Kun'yomi" : "Romaji";
+            
             translationLabel.Visible = includeTranslateCheckBox.Checked;
             translationTextBox.Visible = includeTranslateCheckBox.Checked;
             translationLabel.Enabled = includeTranslateCheckBox.Checked;

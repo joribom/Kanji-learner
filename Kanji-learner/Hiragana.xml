@@ -40,6 +40,18 @@
 		<Kanji>こ</Kanji>
 		<Onyomi>ko</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>きゃ</Kanji>
+    <Onyomi>kya</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>きゅ</Kanji>
+    <Onyomi>kyu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>きょ</Kanji>
+    <Onyomi>kyo</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>さ</Kanji>
 		<Onyomi>sa</Onyomi>
@@ -60,6 +72,18 @@
 		<Kanji>そ</Kanji>
 		<Onyomi>so</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>しゃ</Kanji>
+    <Onyomi>sha</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>しゅ</Kanji>
+    <Onyomi>shu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>しょ</Kanji>
+    <Onyomi>sho</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>た</Kanji>
 		<Onyomi>ta</Onyomi>
@@ -80,6 +104,18 @@
 		<Kanji>と</Kanji>
 		<Onyomi>to</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>ちゃ</Kanji>
+    <Onyomi>cha</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>ちゅ</Kanji>
+    <Onyomi>chu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>ちょ</Kanji>
+    <Onyomi>cho</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>な</Kanji>
 		<Onyomi>na</Onyomi>
@@ -100,6 +136,18 @@
 		<Kanji>の</Kanji>
 		<Onyomi>no</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>にゃ</Kanji>
+    <Onyomi>nya</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>にゅ</Kanji>
+    <Onyomi>nyu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>にょ</Kanji>
+    <Onyomi>nyo</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>は</Kanji>
 		<Onyomi>ha</Onyomi>
@@ -120,6 +168,18 @@
 		<Kanji>ほ</Kanji>
 		<Onyomi>ho</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>ひゃ</Kanji>
+    <Onyomi>hya</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>ひゅ</Kanji>
+    <Onyomi>hyu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>ひょ</Kanji>
+    <Onyomi>hyo</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>ま</Kanji>
 		<Onyomi>ma</Onyomi>
@@ -140,6 +200,18 @@
 		<Kanji>も</Kanji>
 		<Onyomi>mo</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>みゃ</Kanji>
+    <Onyomi>mya</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>みゅ</Kanji>
+    <Onyomi>myu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>みょ</Kanji>
+    <Onyomi>myo</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>や</Kanji>
 		<Onyomi>ya</Onyomi>
@@ -172,6 +244,18 @@
 		<Kanji>ろ</Kanji>
 		<Onyomi>ro</Onyomi>
 	</entry>
+  <entry>
+    <Kanji>りゃ</Kanji>
+    <Onyomi>rya</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>りゅ</Kanji>
+    <Onyomi>ryu</Onyomi>
+  </entry>
+  <entry>
+    <Kanji>りょ</Kanji>
+    <Onyomi>ryo</Onyomi>
+  </entry>
 	<entry>
 		<Kanji>わ</Kanji>
 		<Onyomi>wa</Onyomi>
@@ -183,90 +267,6 @@
 	<entry>
 		<Kanji>ん</Kanji>
 		<Onyomi>n</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>きゃ</Kanji>
-		<Onyomi>kya</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>きゅ</Kanji>
-		<Onyomi>kyu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>きょ</Kanji>
-		<Onyomi>kyo</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>しゃ</Kanji>
-		<Onyomi>sha</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>しゅ</Kanji>
-		<Onyomi>shu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>しょ</Kanji>
-		<Onyomi>sho</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>ちゃ</Kanji>
-		<Onyomi>cha</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>ちゅ</Kanji>
-		<Onyomi>chu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>ちょ</Kanji>
-		<Onyomi>cho</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>にゃ</Kanji>
-		<Onyomi>nya</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>にゅ</Kanji>
-		<Onyomi>nyu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>にょ</Kanji>
-		<Onyomi>nyo</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>ひゃ</Kanji>
-		<Onyomi>hya</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>ひゅ</Kanji>
-		<Onyomi>hyu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>ひょ</Kanji>
-		<Onyomi>hyo</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>みゃ</Kanji>
-		<Onyomi>mya</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>みゅ</Kanji>
-		<Onyomi>myu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>みょ</Kanji>
-		<Onyomi>myo</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>りゃ</Kanji>
-		<Onyomi>rya</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>りゅ</Kanji>
-		<Onyomi>ryu</Onyomi>
-	</entry>
-	<entry>
-		<Kanji>りょ</Kanji>
-		<Onyomi>ryo</Onyomi>
 	</entry>
 	<entry>
 		<Kanji>が</Kanji>

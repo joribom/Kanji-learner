@@ -71,9 +71,10 @@
             // 
             this.characterLabel.AutoSize = true;
             this.characterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.characterLabel.Location = new System.Drawing.Point(581, 34);
+            this.characterLabel.Location = new System.Drawing.Point(775, 42);
+            this.characterLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.characterLabel.Name = "characterLabel";
-            this.characterLabel.Size = new System.Drawing.Size(91, 24);
+            this.characterLabel.Size = new System.Drawing.Size(117, 29);
             this.characterLabel.TabIndex = 0;
             this.characterLabel.Text = "Character";
             // 
@@ -81,22 +82,25 @@
             // 
             this.characterTextBox.Font = new System.Drawing.Font("MS Mincho", 200F);
             this.characterTextBox.HideSelection = false;
-            this.characterTextBox.Location = new System.Drawing.Point(585, 61);
+            this.characterTextBox.Location = new System.Drawing.Point(780, 75);
+            this.characterTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.characterTextBox.Name = "characterTextBox";
             this.characterTextBox.ReadOnly = true;
-            this.characterTextBox.Size = new System.Drawing.Size(293, 274);
+            this.characterTextBox.Size = new System.Drawing.Size(389, 341);
             this.characterTextBox.TabIndex = 1;
             this.characterTextBox.TabStop = false;
             this.characterTextBox.Text = "一";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(889, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1185, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,19 +110,19 @@
             this.aboutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -134,62 +138,62 @@
             this.kanji5ToolStripMenuItem,
             this.kanji6ToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.editToolStripMenuItem.Text = "Lesson";
             // 
             // hiraganaToolStripMenuItem
             // 
             this.hiraganaToolStripMenuItem.Name = "hiraganaToolStripMenuItem";
-            this.hiraganaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.hiraganaToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.hiraganaToolStripMenuItem.Text = "Hiragana";
             this.hiraganaToolStripMenuItem.Click += new System.EventHandler(this.hiraganaToolStripMenuItem_Click);
             // 
             // katakanaToolStripMenuItem
             // 
             this.katakanaToolStripMenuItem.Name = "katakanaToolStripMenuItem";
-            this.katakanaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.katakanaToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.katakanaToolStripMenuItem.Text = "Katakana";
             this.katakanaToolStripMenuItem.Click += new System.EventHandler(this.katakanaToolStripMenuItem_Click);
             // 
             // kanji1ToolStripMenuItem
             // 
             this.kanji1ToolStripMenuItem.Name = "kanji1ToolStripMenuItem";
-            this.kanji1ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.kanji1ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.kanji1ToolStripMenuItem.Text = "First Grade Kanji";
             this.kanji1ToolStripMenuItem.Click += new System.EventHandler(this.kanji1ToolStripMenuItem_Click);
             // 
             // kanji2ToolStripMenuItem
             // 
             this.kanji2ToolStripMenuItem.Name = "kanji2ToolStripMenuItem";
-            this.kanji2ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.kanji2ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.kanji2ToolStripMenuItem.Text = "Second Grade Kanji";
             this.kanji2ToolStripMenuItem.Click += new System.EventHandler(this.kanji2ToolStripMenuItem_Click);
             // 
             // kanji3ToolStripMenuItem
             // 
             this.kanji3ToolStripMenuItem.Name = "kanji3ToolStripMenuItem";
-            this.kanji3ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.kanji3ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.kanji3ToolStripMenuItem.Text = "Third Grade Kanji";
             this.kanji3ToolStripMenuItem.Click += new System.EventHandler(this.kanji3ToolStripMenuItem_Click);
             // 
             // kanji4ToolStripMenuItem
             // 
             this.kanji4ToolStripMenuItem.Name = "kanji4ToolStripMenuItem";
-            this.kanji4ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.kanji4ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.kanji4ToolStripMenuItem.Text = "Fourth Grade Kanji";
             this.kanji4ToolStripMenuItem.Click += new System.EventHandler(this.kanji4ToolStripMenuItem_Click);
             // 
             // kanji5ToolStripMenuItem
             // 
             this.kanji5ToolStripMenuItem.Name = "kanji5ToolStripMenuItem";
-            this.kanji5ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.kanji5ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.kanji5ToolStripMenuItem.Text = "Fifth Grade Kanji";
             this.kanji5ToolStripMenuItem.Click += new System.EventHandler(this.kanji5ToolStripMenuItem_Click);
             // 
             // kanji6ToolStripMenuItem
             // 
             this.kanji6ToolStripMenuItem.Name = "kanji6ToolStripMenuItem";
-            this.kanji6ToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.kanji6ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.kanji6ToolStripMenuItem.Text = "Sixth Grade Kanji";
             this.kanji6ToolStripMenuItem.Click += new System.EventHandler(this.kanji6ToolStripMenuItem_Click);
             // 
@@ -199,9 +203,10 @@
             this.includeRomajiCheckBox.Checked = true;
             this.includeRomajiCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.includeRomajiCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.includeRomajiCheckBox.Location = new System.Drawing.Point(267, 102);
+            this.includeRomajiCheckBox.Location = new System.Drawing.Point(356, 126);
+            this.includeRomajiCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.includeRomajiCheckBox.Name = "includeRomajiCheckBox";
-            this.includeRomajiCheckBox.Size = new System.Drawing.Size(147, 28);
+            this.includeRomajiCheckBox.Size = new System.Drawing.Size(186, 33);
             this.includeRomajiCheckBox.TabIndex = 3;
             this.includeRomajiCheckBox.TabStop = false;
             this.includeRomajiCheckBox.Text = "Include romaji";
@@ -212,9 +217,10 @@
             // 
             this.onyomiTextBox.AcceptsReturn = true;
             this.onyomiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.onyomiTextBox.Location = new System.Drawing.Point(267, 194);
+            this.onyomiTextBox.Location = new System.Drawing.Point(356, 239);
+            this.onyomiTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.onyomiTextBox.Name = "onyomiTextBox";
-            this.onyomiTextBox.Size = new System.Drawing.Size(280, 29);
+            this.onyomiTextBox.Size = new System.Drawing.Size(372, 34);
             this.onyomiTextBox.TabIndex = 4;
             this.onyomiTextBox.Visible = false;
             this.onyomiTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
@@ -223,9 +229,10 @@
             // 
             this.onyomiLabel.AutoSize = true;
             this.onyomiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.onyomiLabel.Location = new System.Drawing.Point(263, 167);
+            this.onyomiLabel.Location = new System.Drawing.Point(351, 206);
+            this.onyomiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.onyomiLabel.Name = "onyomiLabel";
-            this.onyomiLabel.Size = new System.Drawing.Size(80, 24);
+            this.onyomiLabel.Size = new System.Drawing.Size(100, 29);
             this.onyomiLabel.TabIndex = 5;
             this.onyomiLabel.Text = "On\'yomi";
             this.onyomiLabel.Visible = false;
@@ -234,9 +241,10 @@
             // 
             this.translationLabel.AutoSize = true;
             this.translationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.translationLabel.Location = new System.Drawing.Point(263, 291);
+            this.translationLabel.Location = new System.Drawing.Point(351, 358);
+            this.translationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.translationLabel.Name = "translationLabel";
-            this.translationLabel.Size = new System.Drawing.Size(102, 24);
+            this.translationLabel.Size = new System.Drawing.Size(133, 29);
             this.translationLabel.TabIndex = 7;
             this.translationLabel.Text = "Translation";
             // 
@@ -244,9 +252,10 @@
             // 
             this.translationTextBox.AcceptsReturn = true;
             this.translationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.translationTextBox.Location = new System.Drawing.Point(267, 318);
+            this.translationTextBox.Location = new System.Drawing.Point(356, 391);
+            this.translationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.translationTextBox.Name = "translationTextBox";
-            this.translationTextBox.Size = new System.Drawing.Size(280, 29);
+            this.translationTextBox.Size = new System.Drawing.Size(372, 34);
             this.translationTextBox.TabIndex = 17;
             this.translationTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
             // 
@@ -254,9 +263,10 @@
             // 
             this.onAndKunCheckBox.AutoSize = true;
             this.onAndKunCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.onAndKunCheckBox.Location = new System.Drawing.Point(267, 136);
+            this.onAndKunCheckBox.Location = new System.Drawing.Point(356, 167);
+            this.onAndKunCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.onAndKunCheckBox.Name = "onAndKunCheckBox";
-            this.onAndKunCheckBox.Size = new System.Drawing.Size(219, 28);
+            this.onAndKunCheckBox.Size = new System.Drawing.Size(271, 33);
             this.onAndKunCheckBox.TabIndex = 8;
             this.onAndKunCheckBox.TabStop = false;
             this.onAndKunCheckBox.Text = "On\'yomi and Kun\'yomi";
@@ -268,9 +278,10 @@
             this.correctLabel.AutoSize = true;
             this.correctLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.correctLabel.ForeColor = System.Drawing.Color.LawnGreen;
-            this.correctLabel.Location = new System.Drawing.Point(13, 34);
+            this.correctLabel.Location = new System.Drawing.Point(17, 42);
+            this.correctLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.correctLabel.Name = "correctLabel";
-            this.correctLabel.Size = new System.Drawing.Size(76, 24);
+            this.correctLabel.Size = new System.Drawing.Size(98, 29);
             this.correctLabel.TabIndex = 9;
             this.correctLabel.Text = "Correct!";
             this.correctLabel.Visible = false;
@@ -279,9 +290,10 @@
             // 
             this.correctOnyomiDescriptLabel.AutoSize = true;
             this.correctOnyomiDescriptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.correctOnyomiDescriptLabel.Location = new System.Drawing.Point(13, 167);
+            this.correctOnyomiDescriptLabel.Location = new System.Drawing.Point(17, 206);
+            this.correctOnyomiDescriptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.correctOnyomiDescriptLabel.Name = "correctOnyomiDescriptLabel";
-            this.correctOnyomiDescriptLabel.Size = new System.Drawing.Size(159, 24);
+            this.correctOnyomiDescriptLabel.Size = new System.Drawing.Size(201, 29);
             this.correctOnyomiDescriptLabel.TabIndex = 11;
             this.correctOnyomiDescriptLabel.Text = "Previous on\'yomi:";
             // 
@@ -289,18 +301,20 @@
             // 
             this.correctTranslationDescriptLabel.AutoSize = true;
             this.correctTranslationDescriptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.correctTranslationDescriptLabel.Location = new System.Drawing.Point(13, 291);
+            this.correctTranslationDescriptLabel.Location = new System.Drawing.Point(17, 358);
+            this.correctTranslationDescriptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.correctTranslationDescriptLabel.Name = "correctTranslationDescriptLabel";
-            this.correctTranslationDescriptLabel.Size = new System.Drawing.Size(177, 24);
+            this.correctTranslationDescriptLabel.Size = new System.Drawing.Size(229, 29);
             this.correctTranslationDescriptLabel.TabIndex = 13;
             this.correctTranslationDescriptLabel.Text = "Previous translation:";
             // 
             // enterButton
             // 
             this.enterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.enterButton.Location = new System.Drawing.Point(779, 373);
+            this.enterButton.Location = new System.Drawing.Point(1039, 459);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(98, 38);
+            this.enterButton.Size = new System.Drawing.Size(131, 47);
             this.enterButton.TabIndex = 16;
             this.enterButton.TabStop = false;
             this.enterButton.Text = "Enter";
@@ -311,9 +325,10 @@
             // 
             this.kunyomiLabel.AutoSize = true;
             this.kunyomiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.kunyomiLabel.Location = new System.Drawing.Point(263, 232);
+            this.kunyomiLabel.Location = new System.Drawing.Point(351, 286);
+            this.kunyomiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.kunyomiLabel.Name = "kunyomiLabel";
-            this.kunyomiLabel.Size = new System.Drawing.Size(68, 24);
+            this.kunyomiLabel.Size = new System.Drawing.Size(89, 29);
             this.kunyomiLabel.TabIndex = 18;
             this.kunyomiLabel.Text = "Romaji";
             // 
@@ -321,9 +336,10 @@
             // 
             this.kunyomiTextBox.AcceptsReturn = true;
             this.kunyomiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.kunyomiTextBox.Location = new System.Drawing.Point(267, 259);
+            this.kunyomiTextBox.Location = new System.Drawing.Point(356, 319);
+            this.kunyomiTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kunyomiTextBox.Name = "kunyomiTextBox";
-            this.kunyomiTextBox.Size = new System.Drawing.Size(280, 29);
+            this.kunyomiTextBox.Size = new System.Drawing.Size(372, 34);
             this.kunyomiTextBox.TabIndex = 6;
             this.kunyomiTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
             // 
@@ -331,9 +347,10 @@
             // 
             this.correctKunyomiDescriptLabel.AutoSize = true;
             this.correctKunyomiDescriptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.correctKunyomiDescriptLabel.Location = new System.Drawing.Point(13, 232);
+            this.correctKunyomiDescriptLabel.Location = new System.Drawing.Point(17, 286);
+            this.correctKunyomiDescriptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.correctKunyomiDescriptLabel.Name = "correctKunyomiDescriptLabel";
-            this.correctKunyomiDescriptLabel.Size = new System.Drawing.Size(168, 24);
+            this.correctKunyomiDescriptLabel.Size = new System.Drawing.Size(212, 29);
             this.correctKunyomiDescriptLabel.TabIndex = 19;
             this.correctKunyomiDescriptLabel.Text = "Previous kun\'yomi:";
             // 
@@ -343,9 +360,10 @@
             this.includeTranslateCheckBox.Checked = true;
             this.includeTranslateCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.includeTranslateCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.includeTranslateCheckBox.Location = new System.Drawing.Point(267, 68);
+            this.includeTranslateCheckBox.Location = new System.Drawing.Point(356, 84);
+            this.includeTranslateCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.includeTranslateCheckBox.Name = "includeTranslateCheckBox";
-            this.includeTranslateCheckBox.Size = new System.Drawing.Size(180, 28);
+            this.includeTranslateCheckBox.Size = new System.Drawing.Size(229, 33);
             this.includeTranslateCheckBox.TabIndex = 21;
             this.includeTranslateCheckBox.TabStop = false;
             this.includeTranslateCheckBox.Text = "Include translation";
@@ -356,9 +374,10 @@
             // 
             this.strokesDescriptLabel.AutoSize = true;
             this.strokesDescriptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.strokesDescriptLabel.Location = new System.Drawing.Point(581, 338);
+            this.strokesDescriptLabel.Location = new System.Drawing.Point(775, 416);
+            this.strokesDescriptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.strokesDescriptLabel.Name = "strokesDescriptLabel";
-            this.strokesDescriptLabel.Size = new System.Drawing.Size(77, 24);
+            this.strokesDescriptLabel.Size = new System.Drawing.Size(101, 29);
             this.strokesDescriptLabel.TabIndex = 22;
             this.strokesDescriptLabel.Text = "Strokes:";
             // 
@@ -366,9 +385,10 @@
             // 
             this.strokesLabel.AutoSize = true;
             this.strokesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.strokesLabel.Location = new System.Drawing.Point(652, 338);
+            this.strokesLabel.Location = new System.Drawing.Point(869, 416);
+            this.strokesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.strokesLabel.Name = "strokesLabel";
-            this.strokesLabel.Size = new System.Drawing.Size(20, 24);
+            this.strokesLabel.Size = new System.Drawing.Size(26, 29);
             this.strokesLabel.TabIndex = 23;
             this.strokesLabel.Text = "1";
             // 
@@ -381,10 +401,11 @@
             // 
             this.correctOnyomiTextBox.AcceptsReturn = true;
             this.correctOnyomiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.correctOnyomiTextBox.Location = new System.Drawing.Point(17, 194);
+            this.correctOnyomiTextBox.Location = new System.Drawing.Point(23, 239);
+            this.correctOnyomiTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.correctOnyomiTextBox.Name = "correctOnyomiTextBox";
             this.correctOnyomiTextBox.ReadOnly = true;
-            this.correctOnyomiTextBox.Size = new System.Drawing.Size(218, 29);
+            this.correctOnyomiTextBox.Size = new System.Drawing.Size(289, 34);
             this.correctOnyomiTextBox.TabIndex = 24;
             this.correctOnyomiTextBox.TabStop = false;
             // 
@@ -392,10 +413,11 @@
             // 
             this.correctKunyomiTextBox.AcceptsReturn = true;
             this.correctKunyomiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.correctKunyomiTextBox.Location = new System.Drawing.Point(17, 259);
+            this.correctKunyomiTextBox.Location = new System.Drawing.Point(23, 319);
+            this.correctKunyomiTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.correctKunyomiTextBox.Name = "correctKunyomiTextBox";
             this.correctKunyomiTextBox.ReadOnly = true;
-            this.correctKunyomiTextBox.Size = new System.Drawing.Size(218, 29);
+            this.correctKunyomiTextBox.Size = new System.Drawing.Size(289, 34);
             this.correctKunyomiTextBox.TabIndex = 25;
             this.correctKunyomiTextBox.TabStop = false;
             // 
@@ -403,10 +425,11 @@
             // 
             this.correctTranslationTextBox.AcceptsReturn = true;
             this.correctTranslationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.correctTranslationTextBox.Location = new System.Drawing.Point(17, 318);
+            this.correctTranslationTextBox.Location = new System.Drawing.Point(23, 391);
+            this.correctTranslationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.correctTranslationTextBox.Name = "correctTranslationTextBox";
             this.correctTranslationTextBox.ReadOnly = true;
-            this.correctTranslationTextBox.Size = new System.Drawing.Size(218, 29);
+            this.correctTranslationTextBox.Size = new System.Drawing.Size(289, 34);
             this.correctTranslationTextBox.TabIndex = 26;
             this.correctTranslationTextBox.TabStop = false;
             // 
@@ -416,9 +439,10 @@
             this.randomizedOrderCheckBox.Checked = true;
             this.randomizedOrderCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.randomizedOrderCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.randomizedOrderCheckBox.Location = new System.Drawing.Point(267, 34);
+            this.randomizedOrderCheckBox.Location = new System.Drawing.Point(356, 42);
+            this.randomizedOrderCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.randomizedOrderCheckBox.Name = "randomizedOrderCheckBox";
-            this.randomizedOrderCheckBox.Size = new System.Drawing.Size(186, 28);
+            this.randomizedOrderCheckBox.Size = new System.Drawing.Size(235, 33);
             this.randomizedOrderCheckBox.TabIndex = 27;
             this.randomizedOrderCheckBox.TabStop = false;
             this.randomizedOrderCheckBox.Text = "Randomized order";
@@ -427,9 +451,9 @@
             // Form1
             // 
             this.AcceptButton = this.enterButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 423);
+            this.ClientSize = new System.Drawing.Size(1185, 521);
             this.Controls.Add(this.randomizedOrderCheckBox);
             this.Controls.Add(this.correctTranslationTextBox);
             this.Controls.Add(this.correctKunyomiTextBox);
@@ -453,6 +477,7 @@
             this.Controls.Add(this.characterTextBox);
             this.Controls.Add(this.characterLabel);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
