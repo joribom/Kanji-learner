@@ -23,6 +23,7 @@ namespace Kanji_learner
         private String currentOnyomi;
         private String currentKunyomi;
         private String fileName;
+        private int originalCount;
         private int currentKanjiNumber;
         private bool isKanji;
         Random random = new Random();
@@ -57,6 +58,7 @@ namespace Kanji_learner
             }
             original_list = kanji;
             setCurrentStrings();
+            originalCount = kanji.Count;
         }
 
         private void setCurrentStrings()
@@ -75,6 +77,16 @@ namespace Kanji_learner
         public String getFileName()
         {
             return this.fileName;
+        }
+
+        public int getRemainingCount()
+        {
+            return kanji.Count;
+        }
+
+        public int getOriginalCount()
+        {
+            return originalCount;
         }
 
         public void selectRandomKanji()
