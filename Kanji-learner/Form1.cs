@@ -72,6 +72,11 @@ namespace Kanji_learner
             pass();
         }
 
+        private void updateCorrectCount()
+        {
+            numberCorrectLabel.Text = (lesson.getOriginalCount() - lesson.getRemainingCount()) + "/" + lesson.getOriginalCount() + " Correct.";
+        }
+
         private void pass()
         {
             correctLabel.Visible = true;
@@ -82,6 +87,7 @@ namespace Kanji_learner
                 MessageBox.Show("You have completed every character for this lesson!", "Notice", MessageBoxButtons.OK);
             }
             nextKanji(false);
+            updateCorrectCount();
         }
 
         private void fail()
@@ -140,6 +146,8 @@ namespace Kanji_learner
                 strokesLabel.Visible = true;
                 includeTranslateCheckBox.Visible = true;
                 includeRomajiCheckBox.Visible = true;
+                includeRomajiCheckBox.Checked = true;
+                includeTranslateCheckBox.Checked = false;
                 onAndKunCheckBox.Visible = true;
                 correctOnyomiDescriptLabel.Visible = true;
                 correctOnyomiTextBox.Visible = true;
@@ -175,6 +183,7 @@ namespace Kanji_learner
                 enterButton.Location = new Point(enterButtonOriginalX + characterBoxOriginalWidth / 10 * 7, enterButton.Location.Y);
                 correctKunyomiDescriptLabel.Text = "Previous romaji:";
             }
+            updateCorrectCount();
         }
 
         private void kanji1ToolStripMenuItem_Click(object sender, EventArgs e)

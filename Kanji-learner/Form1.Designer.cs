@@ -66,6 +66,7 @@
             this.randomizedOrderCheckBox = new System.Windows.Forms.CheckBox();
             this.strokeOrderPictureBox = new System.Windows.Forms.PictureBox();
             this.strokeOrderLabel = new System.Windows.Forms.Label();
+            this.numberCorrectLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strokeOrderPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -471,12 +472,25 @@
             this.strokeOrderLabel.TabIndex = 29;
             this.strokeOrderLabel.Text = "Stroke order";
             // 
+            // numberCorrectLabel
+            // 
+            this.numberCorrectLabel.AutoSize = true;
+            this.numberCorrectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.numberCorrectLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.numberCorrectLabel.Location = new System.Drawing.Point(17, 71);
+            this.numberCorrectLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.numberCorrectLabel.Name = "numberCorrectLabel";
+            this.numberCorrectLabel.Size = new System.Drawing.Size(150, 29);
+            this.numberCorrectLabel.TabIndex = 30;
+            this.numberCorrectLabel.Text = "0/80 Correct.";
+            // 
             // Form1
             // 
             this.AcceptButton = this.enterButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 516);
+            this.Controls.Add(this.numberCorrectLabel);
             this.Controls.Add(this.strokeOrderLabel);
             this.Controls.Add(this.strokeOrderPictureBox);
             this.Controls.Add(this.randomizedOrderCheckBox);
@@ -554,6 +568,7 @@
         private System.Windows.Forms.CheckBox randomizedOrderCheckBox;
         private System.Windows.Forms.Label strokeOrderLabel;
         private System.Windows.Forms.PictureBox strokeOrderPictureBox;
+        private System.Windows.Forms.Label numberCorrectLabel;
     }
 }
 
