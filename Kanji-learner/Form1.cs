@@ -34,7 +34,10 @@ namespace Kanji_learner
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            checkAnswer();
+            if (lesson.getRemainingCount() != 0)
+            {
+                checkAnswer();
+            }
         }
 
         private void checkAnswer()
