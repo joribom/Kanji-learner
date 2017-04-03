@@ -32,3 +32,7 @@ C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-lear
 C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji_learner.Form1.resources
 C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji_learner.Properties.Resources.resources
 C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.csproj.GenerateResource.Cache
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.exe.manifest
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\bin\Debug\Kanji-learner.application
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.exe.manifest
+C:\Users\Johan\Documents\GitHub\Kanji-learner\Kanji-learner\obj\Debug\Kanji-learner.application

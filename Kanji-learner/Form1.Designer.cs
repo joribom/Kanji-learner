@@ -67,6 +67,7 @@
             this.strokeOrderPictureBox = new System.Windows.Forms.PictureBox();
             this.strokeOrderLabel = new System.Windows.Forms.Label();
             this.numberCorrectLabel = new System.Windows.Forms.Label();
+            this.missLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strokeOrderPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -120,13 +121,14 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -484,12 +486,25 @@
             this.numberCorrectLabel.TabIndex = 30;
             this.numberCorrectLabel.Text = "0/80 Correct.";
             // 
+            // missLabel
+            // 
+            this.missLabel.AutoSize = true;
+            this.missLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.missLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.missLabel.Location = new System.Drawing.Point(18, 100);
+            this.missLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.missLabel.Name = "missLabel";
+            this.missLabel.Size = new System.Drawing.Size(114, 29);
+            this.missLabel.TabIndex = 31;
+            this.missLabel.Text = "0 Misses.";
+            // 
             // Form1
             // 
             this.AcceptButton = this.enterButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1367, 516);
+            this.Controls.Add(this.missLabel);
             this.Controls.Add(this.numberCorrectLabel);
             this.Controls.Add(this.strokeOrderLabel);
             this.Controls.Add(this.strokeOrderPictureBox);
@@ -569,6 +584,7 @@
         private System.Windows.Forms.Label strokeOrderLabel;
         private System.Windows.Forms.PictureBox strokeOrderPictureBox;
         private System.Windows.Forms.Label numberCorrectLabel;
+        private System.Windows.Forms.Label missLabel;
     }
 }
 

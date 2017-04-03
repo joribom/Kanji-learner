@@ -18,6 +18,7 @@ namespace Kanji_learner
         private int originalWidth;
         private int characterBoxOriginalWidth;
         private int enterButtonOriginalX;
+        private int misses = 0;
 
         public Form1()
         {
@@ -34,7 +35,10 @@ namespace Kanji_learner
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            checkAnswer();
+            if (lesson.getRemainingCount() != 0)
+            {
+                checkAnswer();
+            }
         }
 
         private void checkAnswer()
@@ -92,9 +96,18 @@ namespace Kanji_learner
 
         private void fail()
         {
+            misses++;
             correctLabel.Visible = true;
             correctLabel.Text = "Miss!";
             correctLabel.ForeColor = Color.Red;
+            if (misses != 1)
+            {
+                missLabel.Text = misses + " Misses.";
+            }
+            else
+            {
+                missLabel.Text = "1 Miss.";
+            }
             nextKanji(true);
         }
 
@@ -140,6 +153,8 @@ namespace Kanji_learner
             translationTextBox.Text = "";
             onyomiTextBox.Text = "";
             kunyomiTextBox.Text = "";
+            missLabel.Text = "0 Misses.";
+            misses = 0;
             if (isKanji)
             {
                 strokesDescriptLabel.Visible = true;
@@ -284,6 +299,11 @@ namespace Kanji_learner
             {
                 Close();
             }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created by Johan Ribom.\nThe stroke order gifs were taken from http://www.yamasa.org", "About", MessageBoxButtons.OK);
         }
     }
 }
