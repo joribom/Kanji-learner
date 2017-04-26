@@ -45,6 +45,7 @@ namespace Kanji_learner
         {
             if (includeRomajiCheckBox.Checked && onAndKunCheckBox.Checked && lesson.isKanjiLesson())
             {
+                onyomiTextBox.Focus();
                 if (!lesson.correctOnyomi(onyomiTextBox.Text))
                 {
                     fail();
@@ -58,6 +59,7 @@ namespace Kanji_learner
             }
             else if (includeRomajiCheckBox.Checked || !lesson.isKanjiLesson())
             {
+                kunyomiTextBox.Focus();
                 if (!lesson.correctRomaji(kunyomiTextBox.Text))
                 {
                     fail();
@@ -139,13 +141,19 @@ namespace Kanji_learner
             kunyomiTextBox.Text = "";
             if (lesson.isKanjiLesson())
             {
-                strokeOrderPictureBox.ImageLocation = lesson.getFileName().Substring(0, lesson.getFileName().Length - 4) + "/" + lesson.getKanji() + ".gif";
+                updateStrokeOrderBox();    
             }
+        }
+
+        private void updateStrokeOrderBox()
+        {
+            strokeOrderPictureBox.ImageLocation = "gifs/" + lesson.getKanji() + ".gif";
         }
 
         private void changeLesson(String filePath)
         {
-            bool isKanji = filePath.Contains("Kanji");
+            bool isKanji = filePath.Contains("Kanji") || filePath.Contains("LS");
+            bool lastWasKanji = lesson.isKanjiLesson();
             correctLabel.Visible = false;
             lesson = new Lesson(filePath, isKanji);
             characterTextBox.Text = lesson.getKanji();
@@ -161,8 +169,6 @@ namespace Kanji_learner
                 strokesLabel.Visible = true;
                 includeTranslateCheckBox.Visible = true;
                 includeRomajiCheckBox.Visible = true;
-                includeRomajiCheckBox.Checked = true;
-                includeTranslateCheckBox.Checked = false;
                 onAndKunCheckBox.Visible = true;
                 correctOnyomiDescriptLabel.Visible = true;
                 correctOnyomiTextBox.Visible = true;
@@ -172,11 +178,17 @@ namespace Kanji_learner
                 translationTextBox.Visible = true;
                 strokeOrderLabel.Visible = true;
                 strokeOrderPictureBox.Visible = true;
+                if (!lastWasKanji)
+                {
+                    includeRomajiCheckBox.Checked = true;
+                    includeTranslateCheckBox.Checked = false;
+                }
                 this.Width = originalWidth;
                 characterTextBox.Width = characterBoxOriginalWidth;
                 enterButton.Location = new Point(enterButtonOriginalX, enterButton.Location.Y);
                 correctKunyomiDescriptLabel.Text = "Previous kun'yomi:";
                 setTextBoxesAccordingToCheckBoxes();
+                updateStrokeOrderBox();
             }
             else
             {
@@ -305,5 +317,16 @@ namespace Kanji_learner
         {
             MessageBox.Show("Created by Johan Ribom.\nThe stroke order gifs were taken from http://www.yamasa.org", "About", MessageBoxButtons.OK);
         }
+
+        private void translationTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lS1480ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            changeLesson("LS1480.xml");
+        }
+
     }
 }

@@ -68,6 +68,7 @@
             this.strokeOrderLabel = new System.Windows.Forms.Label();
             this.numberCorrectLabel = new System.Windows.Forms.Label();
             this.missLabel = new System.Windows.Forms.Label();
+            this.lS1480ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.strokeOrderPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -121,14 +122,14 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -142,7 +143,8 @@
             this.kanji3ToolStripMenuItem,
             this.kanji4ToolStripMenuItem,
             this.kanji5ToolStripMenuItem,
-            this.kanji6ToolStripMenuItem});
+            this.kanji6ToolStripMenuItem,
+            this.lS1480ToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.editToolStripMenuItem.Text = "Lesson";
@@ -263,6 +265,7 @@
             this.translationTextBox.Name = "translationTextBox";
             this.translationTextBox.Size = new System.Drawing.Size(372, 34);
             this.translationTextBox.TabIndex = 17;
+            this.translationTextBox.TextChanged += new System.EventHandler(this.translationTextBox_TextChanged);
             this.translationTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
             // 
             // onAndKunCheckBox
@@ -498,6 +501,13 @@
             this.missLabel.TabIndex = 31;
             this.missLabel.Text = "0 Misses.";
             // 
+            // lS1480ToolStripMenuItem
+            // 
+            this.lS1480ToolStripMenuItem.Name = "lS1480ToolStripMenuItem";
+            this.lS1480ToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.lS1480ToolStripMenuItem.Text = "LS1480";
+            this.lS1480ToolStripMenuItem.Click += new System.EventHandler(this.lS1480ToolStripMenuItem_Click_1);
+            // 
             // Form1
             // 
             this.AcceptButton = this.enterButton;
@@ -585,6 +595,7 @@
         private System.Windows.Forms.PictureBox strokeOrderPictureBox;
         private System.Windows.Forms.Label numberCorrectLabel;
         private System.Windows.Forms.Label missLabel;
+        private System.Windows.Forms.ToolStripMenuItem lS1480ToolStripMenuItem;
     }
 }
 

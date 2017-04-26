@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace Kanji_learner
 {
@@ -28,6 +29,7 @@ namespace Kanji_learner
         private bool isKanji;
         Random random = new Random();
         Regex wordMatch = new Regex(@"[\w\-]+");
+        Regex letterMatch = new Regex(@"^[\w]+");
 
         public Lesson(String fileName, bool isKanji)
         {
@@ -159,7 +161,31 @@ namespace Kanji_learner
                     return true;
                 }
             }
+            return false;
+        }
 
+        private bool correctJapaneseString(String inputString, String passString)
+        {
+            inputString = inputString.Replace("ū", "uu");
+            inputString = inputString.Replace("ō", "ou");
+            inputString = inputString.Replace("oo", "ou");
+            passString = passString.Replace("ū", "uu");
+            passString = passString.Replace("ō", "ou");
+            foreach (Match currentPassString in wordMatch.Matches(passString))
+            {
+                if (string.Compare(inputString, currentPassString.Value, CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace | CompareOptions.IgnoreCase) == 0)
+                {
+                    return true;
+                } 
+                else if (string.Compare(inputString, letterMatch.Match(passString).ToString(), CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace | CompareOptions.IgnoreCase) == 0)
+                {
+                    return true;
+                }
+                else if (string.Compare(inputString, passString.Replace("-", ""), CultureInfo.CurrentCulture, CompareOptions.IgnoreNonSpace | CompareOptions.IgnoreCase) == 0)
+                {
+                    return true;
+                }
+            }
             return false;
         }
 
@@ -172,7 +198,7 @@ namespace Kanji_learner
             
             foreach (Match onyomiString in wordMatch.Matches(onyomiInput))
             {
-                if (!correctString(onyomiString.Value, this.getOnyomiForCurrentKanji()))
+                if (!correctJapaneseString(onyomiString.Value, this.getOnyomiForCurrentKanji()))
                 {
                     return false;
                 }
@@ -190,7 +216,7 @@ namespace Kanji_learner
 
             foreach (Match kunyomiString in wordMatch.Matches(kunyomiInput))
             {
-                if (!correctString(kunyomiString.Value, this.getKunyomiForCurrentKanji()))
+                if (!correctJapaneseString(kunyomiString.Value, this.getKunyomiForCurrentKanji()))
                 {
                     return false;
                 }
@@ -209,7 +235,7 @@ namespace Kanji_learner
 
             foreach (Match romajiString in wordMatch.Matches(romajiInput))
             {
-                if (!correctString(romajiString.Value, this.getOnyomiForCurrentKanji()) && !correctString(romajiString.Value, this.getKunyomiForCurrentKanji()))
+                if (!correctJapaneseString(romajiString.Value, this.getOnyomiForCurrentKanji()) && !correctJapaneseString(romajiString.Value, this.getKunyomiForCurrentKanji()))
                 {
                     return false;
                 }
