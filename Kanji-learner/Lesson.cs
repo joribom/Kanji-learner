@@ -54,10 +54,6 @@ namespace Kanji_learner
                 onyomi.Add(currentKanji, entryNode.SelectSingleNode("Onyomi") != null ? entryNode.SelectSingleNode("Onyomi").InnerText : "");
                 kunyomi.Add(currentKanji, entryNode.SelectSingleNode("Kunyomi") != null ? entryNode.SelectSingleNode("Kunyomi").InnerText : "");
             }
-            foreach (String singlekanji in kanji)
-            {
-                Console.WriteLine(String.Format("{0}: {1}, {2}, {3}, {4}", singlekanji, strokes[singlekanji], meaning[singlekanji], onyomi[singlekanji], kunyomi[singlekanji]));
-            }
             original_list = kanji;
             setCurrentStrings();
             originalCount = kanji.Count;

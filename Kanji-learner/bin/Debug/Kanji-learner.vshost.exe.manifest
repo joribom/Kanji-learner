@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kanji-learner.exe" size="29656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kanji-learner.exe" size="30168">
       <assemblyIdentity name="Kanji-learner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AcyRdqxJRfJLYXzAHqfNSmrde3MEy8lIAXPXHlQwzD0=</dsig:DigestValue>
+        <dsig:DigestValue>hx42owWoyJGkUzOKW7/LbooRB/dOSK/w7Myc+qNnL14=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

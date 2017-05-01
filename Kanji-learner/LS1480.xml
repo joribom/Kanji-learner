@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<entry>
 		<Kanji>人</Kanji>
 		<Meaning>människa</Meaning>
-		<Onyomi>nin; jin</Onyomi>
+		<Onyomi>nin, jin</Onyomi>
 		<Kunyomi>hito</Kunyomi>
 	</entry>
 	<entry>
@@ -66,7 +66,7 @@
 	<entry>
 		<Kanji>四</Kanji>
 		<Meaning>4</Meaning>
-		<Onyomi>shi; yon</Onyomi>
+		<Onyomi>shi, yon</Onyomi>
 	</entry>
 	<entry>
 		<Kanji>五</Kanji>
@@ -151,7 +151,7 @@
 	<entry>
 		<Kanji>何</Kanji>
 		<Meaning>vad</Meaning>
-		<Kunyomi>nani; nan</Kunyomi>
+		<Kunyomi>nani, nan</Kunyomi>
 	</entry>
 	<entry>
 		<Kanji>化</Kanji>
@@ -203,7 +203,7 @@
 	<entry>
 		<Kanji>行</Kanji>
 		<Meaning>gå</Meaning>
-		<Onyomi>kou; gyou</Onyomi>
+		<Onyomi>kou, gyou</Onyomi>
 		<Kunyomi>i-ku</Kunyomi>
 	</entry>
 	<entry>
